@@ -1,10 +1,10 @@
-<b>Description:
+<b>Description:</b>
 _______
 Running a producer and consumer in separate threads.<br>
   Producer produces messages (sequential numbers) with priority.<br>
   Consumer processes messages with TPS (transactions/ second) restrictions using a "sliding window" model - between any two time points 1 second apart only a certain maximum number of messages will be processed.<br>
 
-<b>Usage:
+<b>Usage:</b>
 ______
 
 throttle.exe 300 4  10 > data.txt<br>
@@ -15,11 +15,11 @@ throttle.exe 300 4  10 > data.txt<br>
 All params are optional.<br>
 data.txt: redirect std out to file<br>
 
-<b>Third Party Source:
+<b>Third Party Source:</b>
 _______
 date.h used for time point formatting as string<br>
 
-<b>Output:
+<b>Output:</b>
 _______
 (to stdout, so can be redirected to file)
 
@@ -29,7 +29,7 @@ _______
 1: Sequential number used as "message"<br>
 (0): Message Priority<br>
 
-<b>Steps:
+<b>Steps:</b>
 _____
 1) To make the solution generic, maintainable ..., abstract the problem from the domain. The solution does not use any domain specific features/ knowledge - just pure CS.
 2) Everything is inline, only for simplicity.
