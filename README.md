@@ -1,35 +1,35 @@
-Usage:
+<b>Description:
+_______
+Running a producer and consumer in separate threads.<br>
+  Producer produces messages (sequential numbers) with priority.<br>
+  Consumer processes messages with TPS (transactions/ second) restrictions using a "sliding window" model - between any two time points 1 second apart only a certain maximum number of messages will be processed.<br>
+
+<b>Usage:
 ______
 
-throttle.exe 300 4  10 > data.txt
+throttle.exe 300 4  10 > data.txt<br>
+300: transactions/ second, default:100<br>
+4: number of seconds producer will produce data, default: 5<br>
+10: indicative producer speed [1 - 100], default: 50<br>
+<br>
+All params are optional.<br>
+data.txt: redirect std out to file<br>
 
-300: transactions/ second, default:100
-
-4: number of seconds producer will produce data, default: 5
-
-10: indicative producer speed [1 - 100], default: 50
-
-All params are optional.
-
-data.txt: redirect std out to file
-
-Third Party Source:
+<b>Third Party Source:
 _______
-date.h used for time point formatting as string
+date.h used for time point formatting as string<br>
 
-Output:
+<b>Output:
 _______
 (to stdout, so can be redirected to file)
 
 23:24:03.399744:	1 (0)
 
-23:24:03.399744: UTC Time at which message sent
+23:24:03.399744: UTC Time at which message sent<br>
+1: Sequential number used as "message"<br>
+(0): Message Priority<br>
 
-1: Sequential number used as "message"
-
-0: Message Priority
-
-Steps:
+<b>Steps:
 _____
 1) To make the solution generic, maintainable ..., abstract the problem from the domain. The solution does not use any domain specific features/ knowledge - just pure CS.
 2) Everything is inline, only for simplicity.
