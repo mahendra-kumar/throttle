@@ -25,7 +25,7 @@ _______
 
 23:24:03.399744:	1 (0)
 
-23:24:03.399744: UTC Time at which message sent<br>
+23:24:03.399744: UTC Time at which message "sent";<br>
 1: Sequential number used as "message"<br>
 (0): Message Priority<br>
 
