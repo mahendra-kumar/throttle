@@ -6,7 +6,7 @@ Running a producer and consumer in separate threads.<br>
 
 <b>Build:</b>
 _______
-Includes Visual C++ 2017 Project File.
+Includes Visual C++ 2017 Project File.<br>
 Can be built and run on other platforms, supporting C++14 or above directly from source.
 
 <b>Usage:</b>
