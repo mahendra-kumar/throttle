@@ -4,6 +4,11 @@ Running a producer and consumer in separate threads.<br>
   Producer produces messages (sequential numbers) with priority.<br>
   Consumer processes messages with TPS (transactions/ second) restrictions using a "sliding window" model - between any two time points 1 second apart only a certain maximum number of messages will be processed.<br>
 
+<b>Description:</b>
+_______
+Includes Visual C++ 2017 Project File.
+Can be built and run on other platforms, supporting C++14 or above directly from source.
+
 <b>Usage:</b>
 ______
 
