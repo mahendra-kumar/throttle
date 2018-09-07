@@ -39,4 +39,4 @@ _____
 1) To make the solution generic, maintainable ..., abstract the problem from the domain. The solution does not use any domain specific features/ knowledge - just pure CS.
 2) Everything is inline, only for simplicity.
 3) Messages are just sequential numbers with those divisible by 7 having higher priority (1 vs 0)
-4) For this demo, the size of sliding window or TPC count is assumed not to change at runtime. Should work though ... but not tested.
+4) For this demo, the size of sliding window or TPS count is assumed not to change at runtime. Should work though ... but not tested.
