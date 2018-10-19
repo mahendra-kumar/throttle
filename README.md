@@ -1,4 +1,4 @@
-<b>Description:</b>
+<b>Description: Refer Throttle_problem.pdf for details</b>
 _______
 Running a producer and consumer in separate threads.<br>
   Producer produces messages (sequential numbers) with priority.<br>
